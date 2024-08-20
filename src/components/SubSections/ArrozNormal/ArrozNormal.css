@@ -1,0 +1,25 @@
+.arroz-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ffffff; /* Borda branca */
+  border-radius: 8px; /* Arredondamento suave das bordas */
+}
+
+.prep-card-horizontal {
+  background-color: white;
+  border: 2px solid #792424; /* Borda escura */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Arredondamento suave das bordas */
+}
+
+.prep-title {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  color: #792424; /* Cor do título */
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff; /* Cor do texto para "ARROZ NORMAL" */
+  margin-top: 40px; /* Espaço acima do título "ARROZ NORMAL" */
+}

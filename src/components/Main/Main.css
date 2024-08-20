@@ -1,0 +1,53 @@
+/* Main.css */
+
+.mb-3 {
+  margin-bottom: 1rem;
+  color: #FFFF;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+  color: #FFFF;
+}
+
+.main-card {
+  position: relative;
+  display: block;
+}
+
+.main-card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.main-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.main-card-body .card-title {
+  border-radius: 50px;
+  background-color: #000;
+  color: #fa7000;
+  padding: 10px 20px;
+  margin: 0;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-card-body .card-title:hover {
+  background-color: #fa7000;
+  color: #000;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}

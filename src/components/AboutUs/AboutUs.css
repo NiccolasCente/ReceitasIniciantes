@@ -1,0 +1,18 @@
+/* AboutUs.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
+/* Estilo para o título 'Sobre Nós' */
+.about-us-title {
+  margin-top: 20px;  /* Margem superior */
+  margin-bottom: 20px;  /* Margem inferior */
+  color: #f5a105;  /* Cor do texto */
+  font-family: 'Inknut Antiqua', serif;  /* Fonte personalizada */
+}
+
+/* Estilo para o texto dos parágrafos */
+.about-us-paragraph {
+  color: #FFFF;  /* Cor do texto */
+  font-size: 18px;  /* Tamanho da fonte (ajuste conforme necessário) */
+  font-family: 'Inknut Antiqua', serif;  /* Fonte personalizada */
+}

@@ -1,14 +1,17 @@
+// Componentes React
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import "../AboutUs/AboutUs.css";
+import LogoAboutUs from "../../assets/hero-img.jpg";
 
 const AboutUs = () => {
   return (
     <Container>
-      <h1>Sobre Nós</h1>
+      <h1 className="about-us-title">Sobre Nós</h1>
       <Row className="align-items-center">
         <Col md={4}>
           <Image
-            src="caminho-para-sua-imagem.jpg"
+            src={LogoAboutUs}
             alt="Niccolas Cente"
             roundedCircle
             fluid
@@ -16,21 +19,21 @@ const AboutUs = () => {
         </Col>
         <Col md={8}>
           <article>
-            <p>
+            <p className="about-us-paragraph">
               Olá, me chamo Niccolas Cente, desenvolvedor web, e aprendi a
               cozinhar apenas na vida adulta. Sempre achei que não tinha
-              capacidade para cozinhar devido a dificuldades de memorização, mas
-              descobri que isso não precisava me impedir. Foi pensando em
-              pessoas como eu, que têm dificuldades na cozinha ou que estão
-              começando agora, que desenvolvi este site.
+              capacidade para cozinhar devido a dificuldades de memorização e ao
+              TDAH (Transtorno do Déficit de Atenção e Hiperatividade). Foi
+              pensando em pessoas com dificuldades semelhantes, que enfrentam
+              desafios na cozinha ou que estão começando agora, que desenvolvi
+              este site.
             </p>
-            <p>
-              Este é um projeto voluntário, criado para ajudar quem enfrenta
-              desafios na hora de memorizar receitas e técnicas culinárias.
-              Aqui, você encontrará um guia passo a passo, feito com carinho,
-              para tornar o processo de cozinhar mais acessível e menos
-              intimidador. Espero que este site seja uma ferramenta útil para
-              você, assim como é para mim.
+            <p className="about-us-paragraph">
+              Este projeto é especialmente voltado para aqueles que têm
+              dificuldades de atenção e memorização, oferecendo um guia passo a
+              passo e dicas práticas para tornar o processo culinário mais
+              acessível e menos estressante. Espero que este site seja uma
+              ferramenta útil e encorajadora para você, assim como foi para mim.
             </p>
           </article>
         </Col>

@@ -19,9 +19,9 @@ const ArrozNormal = () => {
               <h3 className="prep-title">Métodos de Preparo</h3>
               <Card className="prep-card-horizontal">
                 <Card.Body>
-                  <Card.Text>
+                  <Card.Text className="prep-card-text">
                     <p>Aqui você pode listar os métodos de preparo do arroz normal.</p>
-                    <ul>
+                    <ul className="prep-card-list">
                       <li>Passo 1: Secar o arroz/ Quantidade: 2 Xícaras de Arroz.</li>
                       <li>Passo 2: Pegar uma panela e colocar no fogão.</li>
                       <li>Passo 3: Ligar o fogo no fogão.</li>

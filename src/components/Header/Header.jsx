@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, Button, Dropdown } from "react-bootstrap";
 
 // Componentes CSS
 import "../Header/Header.css";
@@ -46,12 +46,48 @@ const Header = () => {
 
       <Navbar bg="dark" variant="dark" expand="lg">
         <Nav className="container-fluid">
-          <Nav.Link as={NavLink} to="/arroz" className="nav-link">Arroz</Nav.Link>
-          <Nav.Link as={NavLink} to="/carnes" className="nav-link">Carnes</Nav.Link>
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/arroz"
+              className="nav-link"
+              id="dropdown-arroz"
+            >
+              Arroz
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/arroz/arroz-branco">
+                Arroz Branco
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/arroz/arroz-integral">
+                Arroz Integral
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/carnes"
+              className="nav-link"
+              id="dropdown-carnes"
+            >
+              Carnes
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/carnes/picanha">
+              Picanha
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/carnes/frango">
+              Frango
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
           <Nav.Link as={NavLink} to="/peixes" className="nav-link">Peixes</Nav.Link>
           <Nav.Link as={NavLink} to="/sopas" className="nav-link">Sopas</Nav.Link>
           <Nav.Link as={NavLink} to="/macarrao" className="nav-link">Macarrão</Nav.Link>
-          <Nav.Link as={NavLink} to="/doces" className="nav-link">Doces e Sobremessas</Nav.Link>
+          <Nav.Link as={NavLink} to="/doces" className="nav-link">Doces e Sobremesas</Nav.Link>
           <Nav.Link as={NavLink} to="/bebidas" className="nav-link">Bebidas</Nav.Link>
         </Nav>
       </Navbar>

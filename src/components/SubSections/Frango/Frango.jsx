@@ -1,29 +1,29 @@
 // Import React
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
+import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb';
 
 // Import Imagens
-import PicanhaImage from '../../../assets/picanha_main.webp'; // Atualize o caminho da imagem conforme necessário
+import FrangoSubSections from '../../../assets/frango_subsection.jpg'; 
 
 // Import CSS
 import './SubSectionGlobal.css';
 
-const Picanha = () => {
+const Frango = () => {
   return (
     <Container className="subsection-global">
-      <BreadcrumbNavigation 
-        currentSection="Picanha" 
+      <BreadcrumbNavigation
+        currentSection="Frango"
         previousSections={[
           { name: 'Menu', link: '/' },
           { name: 'Carnes', link: '/carnes' }
         ]}
       />
-      <h2>Picanha</h2>
+      <h2>Frango</h2>
       <Row className="align-items-start justify-content-center">
         <Col md={6} className="d-flex justify-content-center">
           <div className="image-container">
-            <img src={PicanhaImage} alt="Picanha Pronta" className="arroz-img" />
+            <img src={FrangoSubSections} alt="Frango Pronto" className="arroz-img" />
           </div>
         </Col>
         <Col md={6}>
@@ -33,11 +33,11 @@ const Picanha = () => {
               <Card.Body>
                 <Card.Text className="prep-card-text">
                   <ul className="prep-card-list">
-                    <li>Passo 1: Tempere a picanha com sal e pimenta.</li>
-                    <li>Passo 2: Aqueça a grelha ou churrasqueira.</li>
-                    <li>Passo 3: Coloque a picanha na grelha.</li>
-                    <li>Passo 4: Grelhe a picanha por cerca de 4-5 minutos de cada lado.</li>
-                    <li>Passo 5: Retire da grelha e deixe descansar por alguns minutos.</li>
+                    <li>Passo 1: Tempere o frango com sal, pimenta e outras especiarias a gosto.</li>
+                    <li>Passo 2: Aqueça uma frigideira ou grelha com um pouco de óleo.</li>
+                    <li>Passo 3: Coloque o frango na frigideira ou grelha.</li>
+                    <li>Passo 4: Cozinhe o frango por cerca de 6-8 minutos de cada lado, até que esteja completamente cozido.</li>
+                    <li>Passo 5: Retire o frango da frigideira e deixe descansar por alguns minutos antes de servir.</li>
                     <li>Passo 6: Sirva e aproveite!</li>
                   </ul>
                 </Card.Text>
@@ -50,9 +50,11 @@ const Picanha = () => {
               <Card.Body>
                 <Card.Text className="prep-card-text">
                   <ul className="prep-card-list">
-                    <li>1 peça de picanha.</li>
+                    <li>1 peça de frango (peito, coxa, ou sua escolha).</li>
                     <li>Sal a gosto.</li>
                     <li>Pimenta a gosto.</li>
+                    <li>Especiarias a gosto (por exemplo, alho em pó, paprika).</li>
+                    <li>Óleo para cozinhar.</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -64,4 +66,4 @@ const Picanha = () => {
   );
 };
 
-export default Picanha;
+export default Frango;

@@ -13,6 +13,8 @@ import Carnes from "./components/Sections/Carnes/Carnes";
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
 import Picanha from "./components/SubSections/Picanha/Picanha";
+import Frango from "./components/SubSections/Frango/Frango";
+
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,6 +35,7 @@ function App() {
           </Route>
           <Route path="/carnes" element={<Carnes />}>
             <Route path="picanha" element={<Picanha />} />
+            <Route path="frango" element={<Frango />} />
           </Route>
         </Routes>
       </main>

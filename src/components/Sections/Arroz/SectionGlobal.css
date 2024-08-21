@@ -1,9 +1,8 @@
 /* SectionGlobal.css */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
 
-/* Estilo global para todas as seções */
 .section-global {
-    color: #343a40; /* Cor do texto escuro */
+    color: #343a40; 
     padding: 20px;
     border-radius: 8px;
 }

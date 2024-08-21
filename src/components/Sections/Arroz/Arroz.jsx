@@ -1,10 +1,12 @@
-// Arroz.js
+// Componentes React
 import React from "react";
-import { Outlet, useLocation, Link } from 'react-router-dom';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Outlet, useLocation, Link } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-import "../Arroz/SectionGlobal.css"; // Importa o CSS global
+//Componentes CSS
+import "../Arroz/SectionGlobal.css"; 
 
+//Componentes Imagens
 import ArrozSection from "../../../assets/arroz_section.jpg";
 import ArrozNormalSection from "../../../assets/arroz_branco_main.jpg";
 

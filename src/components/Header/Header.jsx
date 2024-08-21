@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button, Dropdown } from "react-bootstrap";
 
 // Componentes CSS
@@ -76,19 +76,42 @@ const Header = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item as={NavLink} to="/carnes/picanha">
-              Picanha
+                Picanha
               </Dropdown.Item>
               <Dropdown.Item as={NavLink} to="/carnes/frango">
-              Frango
+                Frango
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
-          <Nav.Link as={NavLink} to="/peixes" className="nav-link">Peixes</Nav.Link>
-          <Nav.Link as={NavLink} to="/sopas" className="nav-link">Sopas</Nav.Link>
-          <Nav.Link as={NavLink} to="/macarrao" className="nav-link">Macarrão</Nav.Link>
-          <Nav.Link as={NavLink} to="/doces" className="nav-link">Doces e Sobremesas</Nav.Link>
-          <Nav.Link as={NavLink} to="/bebidas" className="nav-link">Bebidas</Nav.Link>
+          <Nav.Link as={NavLink} to="/peixes" className="nav-link">
+            Peixes
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/sopas" className="nav-link">
+            Sopas
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/macarrao" className="nav-link">
+            Macarrão
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/doces" className="nav-link">
+            Doces e Sobremesas
+          </Nav.Link>
+
+          <Dropdown as={Nav.Item} className="nav-link-dropdown dropdown-bebidas">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/bebidas"
+              className="nav-link"
+              id="dropdown-bebidas"
+            >
+              Bebidas
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/bebidas/suco-de-laranja">
+                Suco de Laranja
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Nav>
       </Navbar>
     </header>

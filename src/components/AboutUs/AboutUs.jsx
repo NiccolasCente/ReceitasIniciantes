@@ -1,7 +1,11 @@
 // Componentes React
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+
+//Componente CSS
 import "../AboutUs/AboutUs.css";
+
+//Componente Imagem
 import LogoAboutUs from "../../assets/hero-img.jpg";
 
 const AboutUs = () => {

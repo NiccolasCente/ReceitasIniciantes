@@ -1,29 +1,28 @@
-/* BreadcrumbNavigation.css */
 .custom-breadcrumb {
-    padding: 10px 15px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-bottom: 20px; /* Espaçamento abaixo do breadcrumb */
-    background-color: transparent; /* Remove o fundo branco */
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+    background-color: transparent; 
 }
 
 .breadcrumb-item a {
-    font-size: 1rem; /* Tamanho da fonte dos itens */
-    color: #fa7000; /* Cor do texto dos itens */
-    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1rem; 
+    color: #fa7000; 
+    text-decoration: none; 
 }
 
 .breadcrumb-item a:hover {
-    color: #e59400; /* Cor do texto ao passar o mouse */
-    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: #e59400; 
+    text-decoration: none; 
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    content: '>'; /* Separador entre os itens */
-    color: #FFFF; /* Cor do separador */
-    padding: 0 5px; /* Espaço ao redor do separador */
+    content: '>'; 
+    color: #FFFF; 
+    padding: 0 5px; 
 }
 
 .breadcrumb-item.active {
-    color: #6c757d; /* Cor do item ativo */
-    text-decoration: none; /* Garante que o item ativo também não tenha sublinhado */
+    color: #6c757d; 
+    text-decoration: none; 
 }

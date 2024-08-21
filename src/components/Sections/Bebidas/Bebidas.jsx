@@ -1,18 +1,19 @@
+//Import componentes React
 import React from "react";
-import { Outlet, useLocation, Link } from 'react-router-dom';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Outlet, useLocation, Link } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-
-// Importa o CSS global
+// Import CSS 
 import "../Bebidas/SectionGlobal.css"; 
 
-//Import Imagens
+// Import Imagens
 import LaranjaSection from "../../../assets/suco_laranja_section.jpg";
 
 const Bebidas = () => {
   const location = useLocation();
-  const isSucoLaranja = location.pathname.includes('/carnes/suco-de-laranja');
+  const isSucoLaranja = location.pathname.includes('/bebidas/suco-de-laranja');
 
+  
   return (
     <section className="section-global" id="picante-section">
       {!isSucoLaranja &&  (
@@ -26,7 +27,7 @@ const Bebidas = () => {
             <Col xs={12} md={4} className="mb-4">
               <Link to="/bebidas/suco-de-laranja" className="nav-link">
                 <Card className="main-card">
-                  <Card.Img variant="top" src={LaranjaSection} className="main-card-img-top" alt="Picante Normal" />
+                  <Card.Img variant="top" src={LaranjaSection} className="main-card-img-top" alt="Suco de Laranja" />
                   <Card.Body className="main-card-body">
                     <Card.Title>Suco de Laranja</Card.Title>
                   </Card.Body>

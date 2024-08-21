@@ -31,14 +31,17 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/sobrenós" element={<AboutUs />} /> 
+          
           <Route path="/arroz" element={<Arroz />}>
             <Route path="arroz-branco" element={<ArrozNormal />} />
             <Route path="arroz-integral" element={<ArrozIntegral />} />
           </Route>
+
           <Route path="/carnes" element={<Carnes />}>
             <Route path="picanha" element={<Picanha />} />
             <Route path="frango" element={<Frango />} />
           </Route>
+
           <Route path="/bebidas" element={<Bebidas />}>
             <Route path="suco-de-laranja" element ={<SucoLaranja />} />
           </Route>

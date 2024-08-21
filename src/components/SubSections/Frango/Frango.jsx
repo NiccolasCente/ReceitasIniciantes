@@ -1,13 +1,13 @@
 // Import React
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb';
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import BreadcrumbNavigation from "../../BreadCrumb/BreadCrumb";
 
 // Import Imagens
-import FrangoSubSections from '../../../assets/frango_subsection.jpg'; 
+import FrangoSubSections from "../../../assets/frango_subsection.jpg"; 
 
 // Import CSS
-import './SubSectionGlobal.css';
+import "./SubSectionGlobal.css";
 
 const Frango = () => {
   return (

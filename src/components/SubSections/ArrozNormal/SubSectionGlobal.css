@@ -3,44 +3,43 @@
 .arroz-img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #ffffff; /* Borda branca */
-  border-radius: 8px; /* Arredondamento suave das bordas */
+  border: 2px solid #ffffff;
+  border-radius: 8px;
 }
 
 .prep-card-horizontal {
   background-color: white;
-  border: 2px solid #792424; /* Borda escura */
+  border: 2px solid #792424;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; /* Arredondamento suave das bordas */
-  margin-bottom: 20px; /* Espaçamento entre os cards */
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .prep-title {
-  font-size: 2rem; /* Tamanho da fonte do título */
-  margin-bottom: 1rem; /* Espaço abaixo do título */
-  color: #792424; /* Cor do título */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #792424;
   text-align: center;
 }
 
 h2 {
-  color: #ffffff; /* Cor do texto para "ARROZ NORMAL" */
-  margin-top: 40px; /* Espaço acima do título "ARROZ NORMAL" */
+  color: #ffffff;
+  margin-top: 40px;
 }
 
-/* Estilos específicos para o conteúdo dentro do Card */
 .prep-card-text {
-  font-family: 'Inknut Antiqua', serif; /* Fonte personalizada */
+  font-family: 'Inknut Antiqua', serif;
 }
 
 .prep-card-list {
-  padding-left: 20px; /* Espaçamento à esquerda da lista */
+  padding-left: 20px;
 }
 
 .prep-card-list li {
-  font-family: 'Inknut Antiqua', serif; /* Fonte personalizada */
-  font-size: 16px; /* Tamanho da fonte dos itens da lista */
-  color: #333333; /* Cor do texto da lista */
-  margin-top: 5px; /* Espaço entre os itens da lista */
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 16px;
+  color: #333333;
+  margin-top: 5px;
 }
 
 .mt-5 {

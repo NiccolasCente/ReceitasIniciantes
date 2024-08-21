@@ -1,10 +1,9 @@
 header {
-  padding: 10px 20px; /* Adiciona 20px de padding à esquerda e à direita */
-  margin: 0 20px; /* Adiciona 20px de margem à esquerda e à direita */
-  box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+  padding: 10px 20px;
+  margin: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Estilos adicionais já presentes no seu código */
 .logo img {
   max-width: 12em;
   height: auto;
@@ -50,7 +49,7 @@ header {
 
 .header-nav .nav-link {
   color: #f5a105;
-  text-decoration: none; /* Garante que o texto não tenha sublinhado */
+  text-decoration: none;
 }
 
 .header-nav .nav-link:hover {
@@ -65,17 +64,15 @@ header {
   color: #e59400;
 }
 
-/* Estilo para o link ativo */
 .navbar-nav .nav-link.active {
-  color: #ffffff; /* Cor para o link ativo */
-  background-color: #fa7000; /* Cor de fundo para o link ativo (opcional) */
+  color: #ffffff;
+  background-color: #fa7000;
   border-radius: 20%;
 }
 
-/* Dropdown */
 .nav-link-dropdown .dropdown-menu {
-  background-color: #343a40; /* Cor de fundo do menu dropdown */
-  border-radius: 0; /* Remove bordas arredondadas do dropdown */
+  background-color: #343a40;
+  border-radius: 0;
 }
 
 .nav-link-dropdown .dropdown-item {
@@ -96,8 +93,8 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #343a40; /* ou outra cor de fundo que você queira */
-  margin-top: 0; /* remove a margem superior padrão */
+  background-color: #343a40;
+  margin-top: 0;
 }
 
 .nav-link-dropdown:hover .dropdown-menu {
@@ -111,4 +108,19 @@ header {
 .navbar-dark .navbar-nav .dropdown-menu .dropdown-item:hover {
   color: #e59400;
   background-color: #495057;
+}
+
+.dropdown-bebidas .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #343a40;
+  margin-top: 0;
+  min-width: 200px;
+  transform: translateX(-100%);
+}
+
+.dropdown-bebidas:hover .dropdown-menu {
+  display: block;
 }

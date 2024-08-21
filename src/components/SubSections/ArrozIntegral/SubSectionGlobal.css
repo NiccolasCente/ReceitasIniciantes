@@ -1,9 +1,8 @@
 /* SubSectionGlobal.css */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
 
-/* Estilo global para seções e subseções */
 .subsection-global {
-    color: #343a40; /* Cor do texto escuro */
+    color: #343a40;
     padding: 20px;
     border-radius: 8px;
 }
@@ -16,15 +15,15 @@
 
 .subsection-global h2 {
     font-size: 2.5rem;
-    color: #ffffff; /* Cor do texto para "ARROZ INTEGRAL" */
-    margin-top: 40px; /* Espaço acima do título "ARROZ INTEGRAL" */
+    color: #ffffff;
+    margin-top: 40px;
     text-align: center;
 }
 
 .subsection-global h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #792424; /* Cor do título */
+    color: #792424;
     text-align: center;
 }
 
@@ -37,10 +36,10 @@
 .subsection-global .image-container img {
     max-width: 100%;
     height: auto;
-    width: 100%; /* Garantir que a imagem use a largura disponível */
-    max-width: 600px; /* Tamanho máximo da imagem */
-    border: 2px solid #ffffff; /* Borda branca */
-    border-radius: 8px; /* Arredondamento suave das bordas */
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
 }
 
 .subsection-global .card-container {
@@ -49,38 +48,38 @@
 
 .subsection-global .prep-card-horizontal {
     background-color: white;
-    border: 2px solid #792424; /* Borda escura */
+    border: 2px solid #792424;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; /* Arredondamento suave das bordas */
+    border-radius: 8px;
 }
 
 .subsection-global .prep-card-text {
-    font-family: 'Inknut Antiqua', serif; /* Fonte personalizada */
+    font-family: 'Inknut Antiqua', serif;
 }
 
 .subsection-global .prep-card-list {
-    padding-left: 20px; /* Espaçamento à esquerda da lista */
+    padding-left: 20px;
 }
 
 .subsection-global .prep-card-list li {
-    font-family: 'Inknut Antiqua', serif; /* Fonte personalizada */
-    font-size: 16px; /* Tamanho da fonte dos itens da lista */
-    color: #333333; /* Cor do texto da lista */
-    margin-top: 5px; /* Espaço entre os itens da lista */
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 16px;
+    color: #333333;
+    margin-top: 5px;
 }
 
 .subsection-global .breadcrumb-nav {
-    position: fixed; /* Fixa a navegação no topo */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff; /* Cor de fundo para a navegação */
+    background-color: #ffffff;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .subsection-global .breadcrumb-nav a {
     text-decoration: none;
-    color: #792424; /* Cor dos links na navegação */
+    color: #792424;
 }

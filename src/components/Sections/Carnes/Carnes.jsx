@@ -1,10 +1,10 @@
-// Picante.js
+// Componentes React
 import React from "react";
-import { Outlet, useLocation, Link } from 'react-router-dom';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Outlet, useLocation, Link } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 
-// Importa o CSS global
+// Import CSS
 import "../Carnes/SectionGlobal.css"; 
 
 //Import Imagens

@@ -1,10 +1,10 @@
 // Componentes React
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import BreadcrumbNavigation from "../../BreadCrumb/BreadCrumb.jsx";
 
 // Import Imagens
-import ArrozSubSection from '../../../assets/arroz_branco_main.jpg';
+import ArrozSubSection from "../../../assets/arroz_branco_main.jpg";
 
 // Import CSS
 import './SubSectionGlobal.css';
@@ -19,7 +19,7 @@ const ArrozNormal = () => {
           { name: 'Arroz', link: '/arroz' }
         ]}
       />
-      <h2>ARROZ BRANCO</h2>
+      <h2>Arroz Branco</h2>
       <Row className="align-items-start justify-content-center">
         <Col md={6} className="d-flex justify-content-center">
           <div className="image-container">

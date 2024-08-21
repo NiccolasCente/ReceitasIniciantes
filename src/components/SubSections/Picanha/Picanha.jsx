@@ -1,13 +1,13 @@
 // Import React
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import BreadcrumbNavigation from "../../BreadCrumb/BreadCrumb.jsx";
 
 // Import Imagens
-import PicanhaImage from '../../../assets/picanha_main.webp'; // Atualize o caminho da imagem conforme necessário
+import PicanhaImage from "../../../assets/picanha_main.webp"; 
 
 // Import CSS
-import './SubSectionGlobal.css';
+import "./SubSectionGlobal.css";
 
 const Picanha = () => {
   return (

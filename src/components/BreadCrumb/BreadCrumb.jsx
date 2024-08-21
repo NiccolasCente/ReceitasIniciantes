@@ -1,8 +1,11 @@
-// BreadcrumbNavigation.js
+// Componentes React
 import React from 'react';
 import { Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+//Componentes CSS
 import "../../components/BreadCrumb/BreadCrumb.css";
+
 const BreadcrumbNavigation = ({ currentSection, previousSections }) => {
   return (
     <Breadcrumb className="custom-breadcrumb">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from 'react-router-dom'; 
+import { Link } from "react-router-dom"; 
 
 // Componentes CSS
 import "../Main/Main.css";
@@ -54,7 +54,7 @@ const Main = () => {
             </Link>
           </Col>
           <Col xs={12} md={4} className="mb-4">
-            <Link to="/bebidas/suco-laranja"> 
+            <Link to="/bebidas/suco-de-laranja"> 
               <Card className="main-card">
                 <Card.Img variant="top" src={SucoLaranja} className="main-card-img-top" alt="Suco de Laranja" />
                 <Card.Body className="main-card-body">

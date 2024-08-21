@@ -1,10 +1,10 @@
-//Components React/Bootstrap
-import React from 'react';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
-import { FaInstagram, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+// Components React/Bootstrap
+import React from "react";
+import { Container, Row, Col, Nav } from "react-bootstrap";
+import { FaInstagram, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
-//Componente CSS
-import '../Footer/Footer.css';
+// Componente CSS
+import "../Footer/Footer.css";
 
 const Footer = () => {
   return (

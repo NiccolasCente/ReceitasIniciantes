@@ -1,41 +1,47 @@
+/* SectionGlobal.css */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
 
-#arroz-section {
+/* Estilo global para todas as seções */
+.section-global {
     color: #343a40; /* Cor do texto escuro */
     padding: 20px;
     border-radius: 8px;
-    color: #FFFF;
-  }
-  
-  #arroz-title {
+}
+
+.section-global h1,
+.section-global h2 {
+    font-family: 'Inknut Antiqua', serif;
+    color:#FFFF;
+}
+
+.section-global h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    font-family: 'Inknut Antiqua', serif;
-  }
-  
-  #arroz-description {
+}
+
+.section-global p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    font-family: 'Inknut Antiqua', serif;
-  }
-  
-  #recipes-heading {
+    color:#FFFF;
+
+}
+
+.section-global h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    font-family: 'Inknut Antiqua', serif;
-  }
-  
-  .main-card {
+}
+
+.section-global .main-card {
     position: relative;
     display: block;
-  }
-  
-  .main-card-img-top {
+}
+
+.section-global .main-card-img-top {
     height: 300px;
     object-fit: cover;
-  }
-  
-  .main-card-body {
+}
+
+.section-global .main-card-body {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -44,9 +50,9 @@
     text-align: center;
     color: #fff;
     padding: 10px;
-  }
-  
-  .main-card-body .card-title {
+}
+
+.section-global .main-card-body .card-title {
     border-radius: 50px;
     background-color: #000;
     color: #fa7000;
@@ -54,16 +60,15 @@
     margin: 0;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .main-card-body .card-title:hover {
+}
+
+.section-global .main-card-body .card-title:hover {
     background-color: #fa7000;
     color: #000;
-  }
-  
-  .nav-link {
+}
+
+.section-global .nav-link {
     display: block;
     text-decoration: none;
     color: inherit;
-  }
-  
+}

@@ -1,4 +1,3 @@
-//Componentes React
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header/Header";
@@ -13,7 +12,7 @@ import Carnes from "./components/Sections/Carnes/Carnes";
 // Importação dos Componentes SubSections
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
-
+import Picanha from "./components/SubSections/Picanha/Picanha";
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,7 +31,9 @@ function App() {
             <Route path="arroz-branco" element={<ArrozNormal />} />
             <Route path="arroz-integral" element={<ArrozIntegral />} />
           </Route>
-          <Route path="/carnes" element={<Carnes />} />
+          <Route path="/carnes" element={<Carnes />}>
+            <Route path="picanha" element={<Picanha />} />
+          </Route>
         </Routes>
       </main>
       <Footer />

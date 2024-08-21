@@ -1,18 +1,17 @@
-//Componentes React
+// Componentes React
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
 
-//Import Imagens
-import ArrozIntegralSection from  "../../../assets/arroz_integral_section.webp";
+// Import Imagens
+import ArrozIntegralSection from "../../../assets/arroz_integral_section.webp";
 
-
-//Import CSS
-import "../ArrozIntegral/ArrozIntegral.css";
+// Import CSS
+import "../ArrozIntegral/SubSectionGlobal.css";
 
 const ArrozIntegral = () => {
   return (
-    <Container>
+    <Container className="subsection-global">
       <BreadcrumbNavigation 
         currentSection="Arroz Integral" 
         previousSections={[
@@ -20,14 +19,16 @@ const ArrozIntegral = () => {
           { name: 'Arroz', link: '/arroz' }
         ]}
       />
-      <h2 className="text-center mb-5 mt-4">ARROZ INTEGRAL</h2>
+      <h2>ARROZ INTEGRAL</h2>
       <Row className="align-items-start justify-content-center">
         <Col md={6} className="d-flex justify-content-center">
-          <img src={ArrozIntegralSection } alt="Arroz Integral Pronto" className="arroz-img" />
+          <div className="image-container">
+            <img src={ArrozIntegralSection} alt="Arroz Integral Pronto" />
+          </div>
         </Col>
         <Col md={6}>
           <div className="methods-container">
-            <h3 className="prep-title">Métodos de Preparo</h3>
+            <h3>Métodos de Preparo</h3>
             <Card className="prep-card-horizontal">
               <Card.Body>
                 <Card.Text className="prep-card-text">
@@ -53,7 +54,7 @@ const ArrozIntegral = () => {
             </Card>
           </div>
           <div className="ingredients-container mt-4">
-            <h3 className="prep-title">Ingredientes</h3>
+            <h3>Ingredientes</h3>
             <Card className="prep-card-horizontal">
               <Card.Body>
                 <Card.Text className="prep-card-text">

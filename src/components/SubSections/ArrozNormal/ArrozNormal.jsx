@@ -1,17 +1,17 @@
-//Componentes React
+// Componentes React
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
 
-//Componentes Imagens
+// Import Imagens
 import ArrozSubSection from '../../../assets/arroz_branco_main.jpg';
 
-//Componentes CSS
-import './ArrozNormal.css';
+// Import CSS
+import './SubSectionGlobal.css';
 
 const ArrozNormal = () => {
   return (
-    <Container>
+    <Container className="subsection-global">
       <BreadcrumbNavigation 
         currentSection="Arroz Branco" 
         previousSections={[
@@ -19,14 +19,16 @@ const ArrozNormal = () => {
           { name: 'Arroz', link: '/arroz' }
         ]}
       />
-      <h2 className="text-center mb-5 mt-4">ARROZ BRANCO</h2>
+      <h2>ARROZ BRANCO</h2>
       <Row className="align-items-start justify-content-center">
         <Col md={6} className="d-flex justify-content-center">
-          <img src={ArrozSubSection} alt="Arroz Pronto" className="arroz-img" />
+          <div className="image-container">
+            <img src={ArrozSubSection} alt="Arroz Pronto" className="arroz-img" />
+          </div>
         </Col>
         <Col md={6}>
           <div className="methods-container">
-            <h3 className="prep-title">Métodos de Preparo</h3>
+            <h3>Métodos de Preparo</h3>
             <Card className="prep-card-horizontal">
               <Card.Body>
                 <Card.Text className="prep-card-text">
@@ -52,7 +54,7 @@ const ArrozNormal = () => {
             </Card>
           </div>
           <div className="ingredients-container mt-4">
-            <h3 className="prep-title">Ingredientes</h3>
+            <h3>Ingredientes</h3>
             <Card className="prep-card-horizontal">
               <Card.Body>
                 <Card.Text className="prep-card-text">

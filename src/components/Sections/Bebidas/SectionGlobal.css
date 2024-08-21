@@ -1,0 +1,76 @@
+/* SectionGlobal.css */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
+/* Estilo global para todas as seções */
+.section-global {
+    color: #343a40; /* Cor do texto escuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-global h1,
+.section-global h2 {
+    font-family: 'Inknut Antiqua', serif;
+    color:#FFFF;
+}
+
+.section-global h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    
+}
+
+.section-global p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color:#FFFF;
+    font-family: 'Inknut Antiqua', serif;
+
+}
+
+.section-global h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.section-global .main-card {
+    position: relative;
+    display: block;
+}
+
+.section-global .main-card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.section-global .main-card-body {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.section-global .main-card-body .card-title {
+    border-radius: 50px;
+    background-color: #000;
+    color: #fa7000;
+    padding: 10px 20px;
+    margin: 0;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section-global .main-card-body .card-title:hover {
+    background-color: #fa7000;
+    color: #000;
+}
+
+.section-global .nav-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

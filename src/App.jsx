@@ -8,12 +8,14 @@ import AboutUs from "./components/AboutUs/AboutUs";
 // Importação dos Componentes Sections
 import Arroz from "./components/Sections/Arroz/Arroz";
 import Carnes from "./components/Sections/Carnes/Carnes";
+import Bebidas from "./components/Sections/Bebidas/Bebidas";
 
 // Importação dos Componentes SubSections
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
 import Picanha from "./components/SubSections/Picanha/Picanha";
 import Frango from "./components/SubSections/Frango/Frango";
+import SucoLaranja from "./components/SubSections/SucoLaranja/SucoLaranja";
 
 
 // Componentes CSS
@@ -36,6 +38,9 @@ function App() {
           <Route path="/carnes" element={<Carnes />}>
             <Route path="picanha" element={<Picanha />} />
             <Route path="frango" element={<Frango />} />
+          </Route>
+          <Route path="/bebidas" element={<Bebidas />}>
+            <Route path="suco-de-laranja" element ={<SucoLaranja />} />
           </Route>
         </Routes>
       </main>

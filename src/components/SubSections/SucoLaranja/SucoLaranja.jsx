@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import BreadcrumbNavigation from "../../BreadCrumb/BreadCrumb";
 
 // Import Imagens
-import SucoLaranjaSubSection from "../../../assets/suco_laranja_subsection.jpg";
+import SucoLaranjaSubSection from "../../../assets/suco_laranja.jpg";
 
 // Import CSS
 import "../SucoLaranja/SubSectionGlobal.css";

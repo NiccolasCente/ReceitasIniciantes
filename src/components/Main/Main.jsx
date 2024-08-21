@@ -11,6 +11,7 @@ import ArrozNormal from "../../assets/arroz_branco_main.jpg";
 import Picanha from "../../assets/picanha_main.webp";
 import SucoLaranja from "../../assets/suco_laranja.jpg";
 
+
 const Main = () => {
   return (
     <main>
@@ -27,17 +28,17 @@ const Main = () => {
           <Col>
             <h1>Lugar Ideal para você<br />
               que quer desenvolver<br />
-              seus dotes culinários</h1>
+              seus dotes culinários!</h1>
           </Col>
         </Row>
         
         <Row>
           <Col xs={12} md={4} className="mb-4">
-            <Link to="/arroz/arroz-normal"> 
+            <Link to="/arroz/arroz-branco"> 
               <Card className="main-card">
                 <Card.Img variant="top" src={ArrozNormal} className="main-card-img-top" alt="Arroz Normal" />
                 <Card.Body className="main-card-body">
-                  <Card.Title>Arroz Normal</Card.Title>
+                  <Card.Title>Arroz Branco</Card.Title>
                 </Card.Body>
               </Card>
             </Link>

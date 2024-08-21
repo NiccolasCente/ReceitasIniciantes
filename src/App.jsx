@@ -12,6 +12,8 @@ import Carnes from "./components/Sections/Carnes/Carnes";
 
 // Importação dos Componentes SubSections
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
+import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
+
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,7 +29,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/sobrenós" element={<AboutUs />} /> 
           <Route path="/arroz" element={<Arroz />}>
-            <Route path="arroz-normal" element={<ArrozNormal />} />
+            <Route path="arroz-branco" element={<ArrozNormal />} />
+            <Route path="arroz-integral" element={<ArrozIntegral />} />
           </Route>
           <Route path="/carnes" element={<Carnes />} />
         </Routes>

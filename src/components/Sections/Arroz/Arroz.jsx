@@ -14,11 +14,12 @@ const Arroz = () => {
   const location = useLocation(); // Obtém a localização atual
 
   // Verifica se a URL contém um caminho para um componente filho
-  const isChildRoute = location.pathname.includes('/arroz/arroz-normal');
+  const isArrozBrancoRoute = location.pathname.includes('/arroz/arroz-branco');
+  const isArrozIntegralRoute = location.pathname.includes('/arroz/arroz-integral');
 
   return (
     <section id="arroz-section">
-      {!isChildRoute && (
+      {!isArrozBrancoRoute && !isArrozIntegralRoute && (
         <Container>
           <h1 id="arroz-title">Arroz</h1>
           <p id="arroz-description">
@@ -28,7 +29,7 @@ const Arroz = () => {
           <h2 id="recipes-heading">Receitas Disponíveis:</h2>
           <Row>
             <Col xs={12} md={4} className="mb-4">
-              <Link to="/arroz/arroz-normal" className="nav-link">
+              <Link to="/arroz/arroz-branco" className="nav-link">
                 <Card className="main-card">
                   <Card.Img variant="top" src={ArrozNormalSection} className="main-card-img-top" alt="Arroz Branco" />
                   <Card.Body className="main-card-body">

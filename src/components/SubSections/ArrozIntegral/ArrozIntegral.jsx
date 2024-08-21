@@ -3,26 +3,27 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import BreadcrumbNavigation from '../../BreadCrumb/BreadCrumb.jsx';
 
-//Componentes Imagens
-import ArrozSubSection from '../../../assets/arroz_branco_main.jpg';
+//Import Imagens
+import ArrozIntegralSection from  "../../../assets/arroz_integral_section.webp";
 
-//Componentes CSS
-import './ArrozNormal.css';
 
-const ArrozNormal = () => {
+//Import CSS
+import "../ArrozIntegral/ArrozIntegral.css";
+
+const ArrozIntegral = () => {
   return (
     <Container>
       <BreadcrumbNavigation 
-        currentSection="Arroz Branco" 
+        currentSection="Arroz Integral" 
         previousSections={[
           { name: 'Menu', link: '/' },
           { name: 'Arroz', link: '/arroz' }
         ]}
       />
-      <h2 className="text-center mb-5 mt-4">ARROZ BRANCO</h2>
+      <h2 className="text-center mb-5 mt-4">ARROZ INTEGRAL</h2>
       <Row className="align-items-start justify-content-center">
         <Col md={6} className="d-flex justify-content-center">
-          <img src={ArrozSubSection} alt="Arroz Pronto" className="arroz-img" />
+          <img src={ArrozIntegralSection } alt="Arroz Integral Pronto" className="arroz-img" />
         </Col>
         <Col md={6}>
           <div className="methods-container">
@@ -31,13 +32,13 @@ const ArrozNormal = () => {
               <Card.Body>
                 <Card.Text className="prep-card-text">
                   <ul className="prep-card-list">
-                    <li>Passo 1: Secar o arroz/ Quantidade: 2 Xícaras de Arroz.</li>
+                    <li>Passo 1: Secar o arroz integral/ Quantidade: 2 Xícaras de Arroz Integral.</li>
                     <li>Passo 2: Pegar uma panela e colocar no fogão.</li>
                     <li>Passo 3: Ligar o fogo no fogão.</li>
                     <li>Passo 4: Colocar um pouco de óleo na panela.</li>
                     <li>Passo 5: Colocar um pouco de alho na panela.</li>
                     <li>Passo 6: Mexer durante alguns segundos ambos.</li>
-                    <li>Passo 7: Colocar o arroz que estava secando na panela.</li>
+                    <li>Passo 7: Colocar o arroz integral que estava secando na panela.</li>
                     <li>Passo 8: Coloque um pouco de sal e mexa durante alguns segundos.</li>
                     <li>Passo 9: Coloque 2 copos de água.</li>
                     <li>Passo 10: Mexa durante alguns segundos.</li>
@@ -57,7 +58,7 @@ const ArrozNormal = () => {
               <Card.Body>
                 <Card.Text className="prep-card-text">
                   <ul className="prep-card-list">
-                    <li>2 Xícaras de Arroz.</li>
+                    <li>2 Xícaras de Arroz Integral.</li>
                     <li>2 Colheres de Óleo.</li>
                     <li>3 Dentes de Alho.</li>
                     <li>1 Colher de Sal.</li>
@@ -73,4 +74,4 @@ const ArrozNormal = () => {
   );
 };
 
-export default ArrozNormal;
+export default ArrozIntegral;

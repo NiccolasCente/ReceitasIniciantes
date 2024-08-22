@@ -13,19 +13,30 @@ import Sopa from "./components/Sections/Sopas/Sopa";
 import Bebidas from "./components/Sections/Bebidas/Bebidas";
 
 // Importação dos Componentes SubSections
+ //Arroz
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
+
+//Carnes
 import Picanha from "./components/SubSections/Picanha/Picanha";
 import Frango from "./components/SubSections/Frango/Frango";
+
+//Peixes
 import PeixeTilapia from "./components/SubSections/PeixeTilápia/PeixeTilapia";  
 import PeixeBacalhau from "./components/SubSections/PeixeBacalhau/PeixeBacalhau";
+
+//Sopas
 import SopaCaldoVerde from "./components/SubSections/SopaCaldoVerde/SopaCaldoVerde";
+import SopaLegumes from "./components/SubSections/SopaLegumes/SopaLegumes";
+
+//Bebidas
 import SucoLaranja from "./components/SubSections/SucoLaranja/SucoLaranja";
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css"
+
 
 function App() {
   return (
@@ -53,6 +64,7 @@ function App() {
 
           <Route path="/sopas" element={<Sopa />}> 
             <Route path="caldo-verde" element={<SopaCaldoVerde />} />
+            <Route path="sopa-de-legumes" element={<SopaLegumes />} />
           </Route>
 
           <Route path="/bebidas" element={<Bebidas />}>

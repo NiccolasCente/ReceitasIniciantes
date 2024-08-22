@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
+.subsection-global {
+    color: #343a40;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.subsection-global h1,
+.subsection-global h2,
+.subsection-global h3 {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.subsection-global h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.subsection-global h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #792424;
+    text-align: center;
+}
+
+.subsection-global .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subsection-global .image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+.subsection-global .card-container {
+    margin-bottom: 20px;
+}
+
+.subsection-global .prep-card-horizontal {
+    background-color: white;
+    border: 2px solid #792424;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.subsection-global .prep-card-text {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.subsection-global .prep-card-list {
+    padding-left: 20px;
+}
+
+.subsection-global .prep-card-list li {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 16px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.subsection-global .breadcrumb-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.subsection-global .breadcrumb-nav a {
+    text-decoration: none;
+    color: #792424;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+
+.arroz-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+
+.prep-card-horizontal {
+  background-color: white;
+  border: 2px solid #792424;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.prep-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #792424;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.prep-card-text {
+  font-family: 'Inknut Antiqua', serif;
+}
+
+.prep-card-list {
+  padding-left: 20px;
+}
+
+.prep-card-list li {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 16px;
+  color: #333333;
+  margin-top: 5px;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}

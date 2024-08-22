@@ -11,6 +11,7 @@ import Carnes from "./components/Sections/Carnes/Carnes";
 import Peixe from "./components/Sections/Peixe/Peixe";
 import Sopa from "./components/Sections/Sopas/Sopa";
 import Bebidas from "./components/Sections/Bebidas/Bebidas";
+import DocesSobremessas from "./components/Sections/DocesSobremessas/DocesSobremessas";
 import Macarrao from "./components/Sections/Macarrão/Macarrao";
 
 // Importação dos Componentes SubSections
@@ -33,6 +34,10 @@ import SopaLegumes from "./components/SubSections/SopaLegumes/SopaLegumes";
 //Macarrão
 import MacarraoEspagueteMolho from "./components/SubSections/MacarraoEspagueteMolho/MacarraoEspagueteMolho";
 import MacarraoEspaguetePesto from "./components/SubSections/MacarraoEspaguetePosto/MacarraoEspaguetePosto";
+
+//Doces e Sobremessas
+import Brigadeiro from "./components/SubSections/Brigadeiro/Brigadeiro";
+import Pudim from "./components/SubSections/Pudim/Pudim";
 
 // Bebidas
 import SucoLaranja from "./components/SubSections/SucoLaranja/SucoLaranja";
@@ -74,6 +79,11 @@ function App() {
           <Route path="/macarrao" element={<Macarrao />}>
             <Route path="macarrao-espaguete-ao-molho" element={<MacarraoEspagueteMolho />} />
             <Route path="macarrao-espaguete-ao-pesto" element={<MacarraoEspaguetePesto />} />
+          </Route>
+
+          <Route path="/doces" element={<DocesSobremessas />} >
+            <Route path="brigadeiro" element={<Brigadeiro />} />
+            <Route path="pudim" element={<Pudim />} />
           </Route>
           
           <Route path="/bebidas" element={<Bebidas />}>

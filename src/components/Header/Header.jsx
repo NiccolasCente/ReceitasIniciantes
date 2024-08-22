@@ -132,10 +132,10 @@ const Header = () => {
               Macarrão
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-ao-molho">
+              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-espaguete-ao-molho">
                 Macarrão ao Molho
               </Dropdown.Item>
-              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-ao-pesto">
+              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-espaguete-ao-pesto">
                 Macarrão ao Pesto
               </Dropdown.Item>
             </Dropdown.Menu>

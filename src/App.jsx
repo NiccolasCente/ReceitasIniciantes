@@ -11,32 +11,36 @@ import Carnes from "./components/Sections/Carnes/Carnes";
 import Peixe from "./components/Sections/Peixe/Peixe";
 import Sopa from "./components/Sections/Sopas/Sopa";
 import Bebidas from "./components/Sections/Bebidas/Bebidas";
+import Macarrao from "./components/Sections/Macarrão/Macarrao";
 
 // Importação dos Componentes SubSections
- //Arroz
+// Arroz
 import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
 
-//Carnes
+// Carnes
 import Picanha from "./components/SubSections/Picanha/Picanha";
 import Frango from "./components/SubSections/Frango/Frango";
 
-//Peixes
-import PeixeTilapia from "./components/SubSections/PeixeTilápia/PeixeTilapia";  
+// Peixes
+import PeixeTilapia from "./components/SubSections/PeixeTilápia/PeixeTilapia";
 import PeixeBacalhau from "./components/SubSections/PeixeBacalhau/PeixeBacalhau";
 
-//Sopas
+// Sopas
 import SopaCaldoVerde from "./components/SubSections/SopaCaldoVerde/SopaCaldoVerde";
 import SopaLegumes from "./components/SubSections/SopaLegumes/SopaLegumes";
 
-//Bebidas
+//Macarrão
+import MacarraoEspagueteMolho from "./components/SubSections/MacarraoEspagueteMolho/MacarraoEspagueteMolho";
+import MacarraoEspaguetePesto from "./components/SubSections/MacarraoEspaguetePosto/MacarraoEspaguetePosto";
+
+// Bebidas
 import SucoLaranja from "./components/SubSections/SucoLaranja/SucoLaranja";
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./App.css"
-
+import "./App.css";
 
 function App() {
   return (
@@ -62,11 +66,16 @@ function App() {
             <Route path="peixe-bacalhau" element={<PeixeBacalhau />} /> 
           </Route>
 
-          <Route path="/sopas" element={<Sopa />}> 
+          <Route path="/sopas" element={<Sopa />}>
             <Route path="caldo-verde" element={<SopaCaldoVerde />} />
             <Route path="sopa-de-legumes" element={<SopaLegumes />} />
           </Route>
 
+          <Route path="/macarrao" element={<Macarrao />}>
+            <Route path="macarrao-espaguete-ao-molho" element={<MacarraoEspagueteMolho />} />
+            <Route path="macarrao-espaguete-ao-pesto" element={<MacarraoEspaguetePesto />} />
+          </Route>
+          
           <Route path="/bebidas" element={<Bebidas />}>
             <Route path="suco-de-laranja" element={<SucoLaranja />} />
           </Route>

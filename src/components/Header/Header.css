@@ -124,3 +124,57 @@ header {
 .dropdown-bebidas:hover .dropdown-menu {
   display: block;
 }
+
+/* Media Query 500px */
+@media (max-width: 500px) {
+  .header-nav .nav-link.active {
+    border-radius: 20px;
+  }
+
+  .form-container {
+    width: 95%; 
+  }
+
+  .search-input {
+    padding: 18px 20px; 
+    font-size: 18px; 
+  }
+
+  .dropdown-bebidas .dropdown-menu {
+    transform: translateX(0); 
+  }
+}
+
+/* Media Query 400px */
+@media (max-width: 400px) {
+  .header-nav .nav-link.active {
+    border-radius: 10px; 
+  }
+
+  .form-container {
+    width: 100%; 
+  }
+
+  .search-input {
+    padding: 20px 24px; 
+    font-size: 20px;
+  }
+
+
+  .dropdown-bebidas .dropdown-menu {
+    transform: translateX(0); 
+  }
+
+  .nav-link-dropdown .dropdown-menu {
+    border-radius: 20px; 
+  }
+
+  .nav-link-dropdown .dropdown-item {
+    border-radius: 10px; 
+
+  }
+
+  .nav-link-dropdown .dropdown-item:hover {
+    border-radius: 20px; 
+  }
+}

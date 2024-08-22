@@ -12,3 +12,28 @@
   font-size: 18px;  
   font-family: 'Inknut Antiqua', serif;  
 }
+
+/* Media Query 500px */
+
+@media (max-width: 500px){
+  .about-us-title{
+    margin-top: 1em;
+  }
+
+  .about-us-paragraph {
+    margin-top: 1em;
+  }
+
+}
+
+/* Media Query 400px */
+@media (max-width: 400px){
+  .about-us-title{
+    margin-top: 1em;
+  }
+  
+  .about-us-paragraph {
+    margin-top: 1em;
+  }
+
+}

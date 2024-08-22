@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 // Importação dos Componentes Sections
 import Arroz from "./components/Sections/Arroz/Arroz";
 import Carnes from "./components/Sections/Carnes/Carnes";
+import Peixe from "./components/Sections/Peixe/Peixe";
 import Bebidas from "./components/Sections/Bebidas/Bebidas";
 
 // Importação dos Componentes SubSections
@@ -15,8 +16,9 @@ import ArrozNormal from "./components/SubSections/ArrozNormal/ArrozNormal";
 import ArrozIntegral from "./components/SubSections/ArrozIntegral/ArrozIntegral";
 import Picanha from "./components/SubSections/Picanha/Picanha";
 import Frango from "./components/SubSections/Frango/Frango";
+import PeixeTilapia from "./components/SubSections/PeixeTilápia/PeixeTilapia";  
+import PeixeBacalhau from "./components/SubSections/PeixeBacalhau/PeixeBacalhau";
 import SucoLaranja from "./components/SubSections/SucoLaranja/SucoLaranja";
-
 
 // Componentes CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,7 +32,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/sobrenós" element={<AboutUs />} /> 
+          <Route path="/sobrenos" element={<AboutUs />} /> 
           
           <Route path="/arroz" element={<Arroz />}>
             <Route path="arroz-branco" element={<ArrozNormal />} />
@@ -43,8 +45,14 @@ function App() {
           </Route>
 
           <Route path="/bebidas" element={<Bebidas />}>
-            <Route path="suco-de-laranja" element ={<SucoLaranja />} />
+            <Route path="suco-de-laranja" element={<SucoLaranja />} />
           </Route>
+
+          <Route path="/peixes" element={<Peixe />}>
+            <Route path="peixe-tilapia" element={<PeixeTilapia />} /> 
+            <Route path="peixe-bacalhau" element={<PeixeBacalhau />} /> 
+          </Route>
+        
         </Routes>
       </main>
       <Footer />

@@ -23,7 +23,7 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/" end>
               Início
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/sobrenós">
+            <Nav.Link as={NavLink} to="/sobrenos">
               Sobre Nós
             </Nav.Link>
           </Nav>
@@ -84,18 +84,81 @@ const Header = () => {
             </Dropdown.Menu>
           </Dropdown>
 
-          <Nav.Link as={NavLink} to="/peixes" className="nav-link">
-            Peixes
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/sopas" className="nav-link">
-            Sopas
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/macarrao" className="nav-link">
-            Macarrão
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/doces" className="nav-link">
-            Doces e Sobremesas
-          </Nav.Link>
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/peixes"
+              className="nav-link"
+              id="dropdown-peixes"
+            >
+              Peixes
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/peixes/peixe-tilapia">
+                Tilápia
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/peixes/peixe-bacalhau">
+                Bacalhau
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/sopas"
+              className="nav-link"
+              id="dropdown-sopas"
+            >
+              Sopas
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/sopas/caldo-verde">
+                Caldo Verde
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/sopas/sopa-de-legumes">
+                Sopa de Legumes
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/macarrao"
+              className="nav-link"
+              id="dropdown-macarrao"
+            >
+              Macarrão
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-ao-molho">
+                Macarrão ao Molho
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/macarrao/macarrao-ao-pesto">
+                Macarrão ao Pesto
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown as={Nav.Item} className="nav-link-dropdown">
+            <Dropdown.Toggle
+              as={NavLink}
+              to="/doces"
+              className="nav-link"
+              id="dropdown-doces"
+            >
+              Doces e Sobremesas
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item as={NavLink} to="/doces/brigadeiro">
+                Brigadeiro
+              </Dropdown.Item>
+              <Dropdown.Item as={NavLink} to="/doces/pudim">
+                Pudim
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
 
           <Dropdown as={Nav.Item} className="nav-link-dropdown dropdown-bebidas">
             <Dropdown.Toggle

@@ -1,4 +1,3 @@
-//Import componentes React
 import React from "react";
 import { Outlet, useLocation, Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -13,14 +12,15 @@ const Bebidas = () => {
   const location = useLocation();
   const isSucoLaranja = location.pathname.includes('/bebidas/suco-de-laranja');
 
-  
   return (
-    <section className="section-global" id="picante-section">
-      {!isSucoLaranja &&  (
+    <section className="section-global" id="bebidas-section">
+      {!isSucoLaranja && (
         <Container>
           <h1>Bebidas</h1>
           <p>
-            A carne é um ingrediente versátil e saboroso, capaz de transformar qualquer refeição em uma experiência memorável. Seja grelhada, assada ou cozida, ela oferece uma riqueza de sabores e texturas que agradam a todos os paladares. Experimente diferentes cortes e métodos de preparo para descobrir novas maneiras de apreciar este ingrediente essencial.
+            As bebidas são essenciais para complementar qualquer refeição e podem variar de simples a sofisticadas. 
+            Seja um suco refrescante, um smoothie nutritivo ou uma bebida quente reconfortante, elas trazem sabor e alegria aos nossos dias. 
+            Explore diferentes receitas e descubra novas combinações para atender a todos os gostos e ocasiões.
           </p>
           <h2>Receitas Disponíveis:</h2>
           <Row>

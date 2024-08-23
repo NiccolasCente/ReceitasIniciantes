@@ -1,6 +1,8 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+//Componentes React
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button, Dropdown } from "react-bootstrap";
+import SearchLogic from "../SearchLogic/SearchLogic";
 
 // Componentes CSS
 import "../Header/Header.css";
@@ -9,6 +11,29 @@ import "../Header/Header.css";
 import LogoHeader from "../../assets/receitas_iniciantes_logo.png";
 
 const Header = () => {
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [submittedQuery, setSubmittedQuery] = useState("");
+  const location = useLocation();
+
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      setSubmittedQuery(searchQuery.trim().toLowerCase());
+    }
+  };
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setSubmittedQuery("");
+    }
+  }, [location]);
+
+
   return (
     <header>
       <Navbar expand="lg" className="header-navbar mb-2">
@@ -31,18 +56,24 @@ const Header = () => {
       </Navbar>
 
       <div className="form-container">
-        <Form className="d-flex search-form">
+        <Form className="d-flex search-form" onSubmit={handleSearch}>
           <FormControl
             type="search"
             placeholder="Procure uma receita ou prato"
             className="search-input"
             aria-label="Search"
+            value={searchQuery}
+            onChange={handleInputChange}
+
+
           />
-          <Button variant="outline-success" className="search-button">
+          <Button variant="outline-success" className="search-button" type="submit" onClick={handleSearch}>
             Procurar
           </Button>
         </Form>
       </div>
+
+      {submittedQuery && <SearchLogic query={submittedQuery} />}
 
       <Navbar bg="dark" variant="dark" expand="lg">
         <Nav className="container-fluid">

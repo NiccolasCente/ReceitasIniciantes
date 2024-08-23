@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/AboutUs/AboutUs";
+import NotFound from "./components/NotFound/NotFound";
 
 // Importação dos Componentes Sections
 import Arroz from "./components/Sections/Arroz/Arroz";
@@ -55,6 +56,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/sobrenos" element={<AboutUs />} /> 
+          <Route path="/nao-encontrado" element={<NotFound />} />
+
           
           <Route path="/arroz" element={<Arroz />}>
             <Route path="arroz-branco" element={<ArrozNormal />} />

@@ -4,14 +4,13 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button, Dropdown } from "react-bootstrap";
 import SearchLogic from "../SearchLogic/SearchLogic";
 
-// Componentes CSS
+//Componentes CSS
 import "../Header/Header.css";
 
-// Componentes Imagens
+////Componentes Imagens
 import LogoHeader from "../../assets/receitas_iniciantes_logo.png";
 
 const Header = () => {
-
   const [searchQuery, setSearchQuery] = useState("");
   const [submittedQuery, setSubmittedQuery] = useState("");
   const location = useLocation();
@@ -30,9 +29,11 @@ const Header = () => {
   useEffect(() => {
     if (location.pathname === '/') {
       setSubmittedQuery("");
+    } else {
+      setSearchQuery("");
+      setSubmittedQuery("");
     }
   }, [location]);
-
 
   return (
     <header>
@@ -64,10 +65,8 @@ const Header = () => {
             aria-label="Search"
             value={searchQuery}
             onChange={handleInputChange}
-
-
           />
-          <Button variant="outline-success" className="search-button" type="submit" onClick={handleSearch}>
+          <Button variant="outline-success" className="search-button" type="submit">
             Procurar
           </Button>
         </Form>

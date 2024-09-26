@@ -47,14 +47,7 @@
   <p><code>cd your-repo-name</code></p>
   <p>3. Install the dependencies:</p>
   <p><code>npm install</code></p>
-  <p>4. Install the required libraries:</p>
-  <ul>
-    <li><code>npm install react-icons</code></li>
-    <li><code>npm install react-bootstrap</code></li>
-    <li><code>npm install react-bootstrap-icons</code></li>
-    <li><code>npm install react-router-dom</code></li>
-  </ul>
-  <p>5. Start the development server:</p>
+  <p>4. Start the development server:</p>
   <p><code>npm run dev</code></p>
 
   <p>(Português - Brasil)</p>
@@ -64,13 +57,6 @@
   <p><code>cd nome-do-repo</code></p>
   <p>3. Instale as dependências:</p>
   <p><code>npm install</code></p>
-  <p>4. Instale as bibliotecas necessárias:</p>
-  <ul>
-    <li><code>npm install react-icons</code></li>
-    <li><code>npm install react-bootstrap</code></li>
-    <li><code>npm install react-bootstrap-icons</code></li>
-    <li><code>npm install react-router-dom</code></li>
-  </ul>
-  <p>5. Inicie o servidor de desenvolvimento:</p>
+  <p>4. Inicie o servidor de desenvolvimento:</p>
   <p><code>npm run dev</code></p>
 </footer>
